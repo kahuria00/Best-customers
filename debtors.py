@@ -4,7 +4,7 @@ import pandas as pd
 def good_debtors():
 	current_directory = os.path.realpath(
 	os.path.join(os.getcwd(), os.path.dirname(__file__))) #getting working directory
-	sheetname_input = str(input("Enter csv name: "))
+	sheetname_input = str(input("Enter csv name: ")).lower()
 	no_of_customers = int(input("Enter number of paying customers you need: "))
 	
 	csv_file_path = f"{current_directory}/{sheetname_input}"
